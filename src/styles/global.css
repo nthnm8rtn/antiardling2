@@ -1,0 +1,21 @@
+html {
+  background-color: hsl(210, 40%, 96%);
+  font-family:Garamond, serif;
+  font-weight: 400;
+}
+body {
+  margin: 1 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 0.5;
+  color:gray; 
+  font-size:10px;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
