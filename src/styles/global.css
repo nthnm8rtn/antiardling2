@@ -1,6 +1,6 @@
 html {
   background-color: hsl(210, 40%, 96%);
-  font-family:Garamond, serif;
+  font-family: Garamond, serif;
   font-weight: 400;
 }
 body {
@@ -9,8 +9,8 @@ body {
   max-width: 80ch;
   padding: 1rem;
   line-height: 0.5;
-  color:gray; 
-  font-size:10px;
+  color: gray; 
+  font-size: 10px;
 }
 * {
   box-sizing: border-box;
@@ -18,4 +18,8 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
