@@ -12,8 +12,41 @@ body {
   color: gray; 
   font-size: 10px;
 }
-* {
-  box-sizing: border-box;
+.white-block {
+  position: absolute;
+  top: 80px;       /* move down */
+  left: 124px;      /* adjust horizontal offset */
+  width: calc(100% - 240px); /* full width minus margins */
+  height: 600px;   /* height of the white block */
+  background-color: rgba(255, 255, 255, 0.353);
+  z-index: -1;     /* behind the text */
+  border: 0.8px solid rgb(197, 197, 197);  /* <-- added border */
+  box-sizing: border-box;   /* include border in width/height */
+  border-radius: 1px; 
+}
+.gray-line {
+    position: absolute;
+    top:300px;
+    left:150px;
+    width: calc(100% - 295px);
+    height:2px;
+    background-color: rgba(158, 156, 156, 0.353);
+    z-index: -1;
+}
+.pfp {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 102px;           /* distance from top */
+    left: 150px;          /* distance from left edge */
+    /* right: 0; */      /* remove this if using left */
+    
+    background-image: url('/images/image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    margin: 0;           /* remove auto margin so it doesn’t center */
+    filter: grayscale(80%);
 }
 h1 {
   margin: -1rem 0 0 0;
@@ -27,20 +60,20 @@ a {
   text-decoration: none;
 }
 h2{
-    margin: -1rem -2rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
+    margin: -1rem -28rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
     text-align:right;
     margin-top: -0.8rem;
     font-size:1.8rem;
 }
 h3 {
-    margin: -1rem -14rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
+    margin: -1rem -40rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
     font-size: 1.8rem;
     text-align: right;
     margin-top: -0.9rem;
     
 }
 h4 {
-    margin: -1rem -22rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
+    margin: -1rem -47.9rem 0 0; /* increase the right value (2rem, 3rem, etc.) */
     font-size: 1.8rem;
     text-align: right;
     margin-top: -0.9rem;
